@@ -1,0 +1,44 @@
+body {
+  background: linear-gradient(to bottom, #ffe6f0, #e0c3fc);
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.envelope img {
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.envelope:hover img {
+  transform: scale(1.1);
+}
+
+#letter {
+  margin-top: 30px;
+  font-size: 24px;
+  color: #ff69b4;
+  padding: 20px;
+  animation: fadeIn 2s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#muteBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
